@@ -17,9 +17,14 @@ public class StudentInfo {
 		
 	}
 	public void printInfo() {
-		System.out.println("Name" + name);
-		System.err.println("Major"+major);
-		System.out.println("id"+id);
+		System.out.println("Name: " + name);
+		System.out.println("Major: "+major);
+		System.out.println("id: "+id);
+	}
+	public static void main(String[] args) {
+		
+		StudentInfo objInfo=new StudentInfo("Negina", "IT", 123);
+		objInfo.printInfo();
 	}
 
 }
